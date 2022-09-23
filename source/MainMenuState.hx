@@ -195,64 +195,65 @@ class MainMenuState extends MusicBeatState
 		switch (FlxG.random.int(1, 6))
             {
             case 1:
-			char = new FlxSprite(820, 170).loadGraphic(Paths.image('mainmenu/hellron'));//put your cords and image here
-			char.frames = Paths.getSparrowAtlas('mainmenu/hellron');//here put the name of the xml
-			char.animation.addByPrefix('idleR', 'idle normal', 24, true);//on 'idle normal' change it to your xml one
-			char.animation.play('idleR');//you can rename the anim however you want to
+			char = new FlxSprite(820, 170).loadGraphic(Paths.image('mainmenu/BOYFRIEND'));//put your cords and image here
+			char.frames = Paths.getSparrowAtlas('mainmenu/BOYFRIEND');//here put the name of the xml
+			char.animation.addByPrefix('idle', 'BF idle dance', 24, true);//on 'idle normal' change it to your xml one
+			char.animation.play('idle');//you can rename the anim however you want to
 			char.scrollFactor.set();
-			FlxG.sound.play(Paths.sound('appear'), 2);
+			FlxG.sound.play(Paths.sound('dialogue'), 2);
 			char.flipX = true;//this is for flipping it to look left instead of right you can make it however you want
 			char.antialiasing = ClientPrefs.globalAntialiasing;
 			add(char);
 
             case 2:
-			char = new FlxSprite(790, 200).loadGraphic(Paths.image('mainmenu/BOYFRIEND_Run'));
-			char.frames = Paths.getSparrowAtlas('mainmenu/BOYFRIEND_Run');
-			char.animation.addByPrefix('idleB', 'BF idle dance', 24, true);
-			char.animation.play('idleB');
+			char = new FlxSprite(790, 200).loadGraphic(Paths.image('mainmenu/GF_assets'));
+			char.frames = Paths.getSparrowAtlas('mainmenu/GF_assets');
+			char.animation.addByPrefix('idleG', 'GF dancing beat', 24, true);
+			char.animation.play('idleG');
 			char.scrollFactor.set();
 			char.antialiasing = ClientPrefs.globalAntialiasing;
+			FlxG.sound.play(Paths.sound('GF_1'), 2);
 			add(char);
               
 			case 3:
-			char = new FlxSprite(810, 120).loadGraphic(Paths.image('mainmenu/sans_assets'));
-			char.frames = Paths.getSparrowAtlas('mainmenu/sans_assets');
-			char.animation.addByPrefix('idleS', 'SANS Idle', 24, true);
-			char.animation.play('idleS');
+			char = new FlxSprite(810, 120).loadGraphic(Paths.image('mainmenu/Pico_FNF_assetss'));
+			char.frames = Paths.getSparrowAtlas('mainmenu/Pico_FNF_assetss');
+			char.animation.addByPrefix('idleS', 'Pico Idle Dance', 24, true);
+			char.animation.play('');
 			char.scrollFactor.set();
 			char.flipX = true;
 			char.antialiasing = ClientPrefs.globalAntialiasing;
 			add(char);
 
 			case 4:
-			char = new FlxSprite(650, 130).loadGraphic(Paths.image('mainmenu/Glitched'));
-			char.frames = Paths.getSparrowAtlas('mainmenu/Glitched');
-			char.animation.addByPrefix('idleG', 'idle???', 24, true);
-			char.animation.play('idleG');
+			char = new FlxSprite(650, 130).loadGraphic(Paths.image('mainmenu/'));
+			char.frames = Paths.getSparrowAtlas('mainmenu/monster');
+			char.animation.addByPrefix('idleM', 'monster idle', 24, true);
+			char.animation.play('idleM');
 			char.scrollFactor.set();
 			char.flipX = true;
 			char.antialiasing = ClientPrefs.globalAntialiasing;
-			FlxG.sound.play(Paths.sound('miaou'), 2);
+			FlxG.sound.play(Paths.sound('missnote1'), 2);
 			add(char);
 		
 			case 5:
-			char = new FlxSprite(700, 130).loadGraphic(Paths.image('mainmenu/hellron-drippin'));
-			char.frames = Paths.getSparrowAtlas('mainmenu/hellron-drippin');
-			char.animation.addByPrefix('idleRD', 'idle instance', 24, true);
-			char.animation.play('idleRD');
+			char = new FlxSprite(700, 130).loadGraphic(Paths.image('mainmenu/BOYFRIEND'));
+			char.frames = Paths.getSparrowAtlas('mainmenu/BOYFRIEND');
+			char.animation.addByPrefix('dedbeep', 'BF Dead Loop', 24, true);
+			char.animation.play('dedbeep');
 			char.scrollFactor.set();
 			char.flipX = true;
 			char.antialiasing = ClientPrefs.globalAntialiasing;
-			FlxG.sound.play(Paths.sound('SUS'), 2);
+			FlxG.sound.play(Paths.sound('fnf_loss_sfx'), 2);
 			add(char);
 
 			case 6:
-			char = new FlxSprite(790, 190).loadGraphic(Paths.image('mainmenu/Sans_Gold'));
-			char.frames = Paths.getSparrowAtlas('mainmenu/Sans_Gold');
-			char.animation.addByPrefix('idleSG', 'Silver Idle', 24, true);
-			char.animation.play('idleSG');
+			char = new FlxSprite(790, 190).loadGraphic(Paths.image('mainmenu/bfPixelsDEAD'));
+			char.frames = Paths.getSparrowAtlas('mainmenu/bfPixelsDEAD');
+			char.animation.addByPrefix('idlebpd', 'Retry Loop', 24, true);
+			char.animation.play('idlebpd');
 			char.scrollFactor.set();
-			FlxG.sound.play(Paths.sound('error'), 2);
+			FlxG.sound.play(Paths.sound('fnf_loss_sfx'), 2);
 			char.antialiasing = ClientPrefs.globalAntialiasing;
 			background.color = FlxColor.BLACK;
 			bgScroll.color = FlxColor.BLACK;
