@@ -1,4 +1,4 @@
-package util;
+package;
 
 import flixel.FlxCamera;
 import flixel.FlxG;
@@ -12,9 +12,6 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxGradient;
 import flixel.util.FlxTimer;
-import song.Conductor.BPMChangeEvent;
-import states.MusicBeatState;
-import states.substates.MusicBeatSubstate;
 
 class CustomFadeTransition extends MusicBeatSubstate
 {
